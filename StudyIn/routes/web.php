@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/navbar', function () {
+    return view('components/navbar');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});

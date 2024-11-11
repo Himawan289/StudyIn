@@ -1,0 +1,84 @@
+/* CSS untuk font dan reset */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4cb1f7;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo-icon {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 250px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #a3d4f9;
+    border-radius: 15px;
+    padding: 5px 10px;
+    flex-shrink: 0;
+}
+
+.navbar-search input {
+    border: none;
+    background: transparent;
+    color: #4cb1f7;
+    outline: none;
+    font-size: 14px;
+    width: 150px;
+}
+
+.navbar-search button {
+    border: none;
+    background: transparent;
+    color: #4cb1f7;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+}
