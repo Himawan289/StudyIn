@@ -24,3 +24,7 @@ Route::get('/navbar', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/detailCourse', function () {
+    return view('detailCourse');
+});
