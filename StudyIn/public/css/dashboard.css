@@ -38,7 +38,8 @@
 }
 
 .course-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: flex-start;
     overflow-x: auto;
