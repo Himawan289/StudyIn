@@ -39,3 +39,7 @@ Route::get('/coursesLock', function () {
 Route::get('/paket', function () {
     return view('paket');
 });
+
+Route::get('/payment', function () {
+    return view('payment');
+});
