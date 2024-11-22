@@ -31,3 +31,7 @@ Route::get('/courses', function () {
 Route::get('/detailCourse', function () {
     return view('detailCourse');
 });
+
+Route::get('/coursesLock', function () {
+    return view('coursesLock');
+});
