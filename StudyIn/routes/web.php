@@ -35,3 +35,7 @@ Route::get('/detailCourse', function () {
 Route::get('/coursesLock', function () {
     return view('coursesLock');
 });
+
+Route::get('/paket', function () {
+    return view('paket');
+});
