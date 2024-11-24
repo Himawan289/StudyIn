@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<<<<<<< HEAD
 <header class="header">
     <div class="container">
         <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
@@ -19,24 +18,9 @@
             <a href="#">E-Library</a>
             <a href="#">Layanan</a>
         </nav>
-        <a href="{{ route('register') }}" class="btn-signup">Daftar Sekarang</a>
+        <a href="#" class="btn-signup">Daftar Sekarang</a>
     </div>
 </header>
-=======
-<nav class="navbar">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" />
-        </div>
-        <div class="nav-links">
-            <a href="#produk">PRODUK</a>
-            <a href="#promo">PROMO</a>
-            <a href="#testimoni">TESTIMONI</a>
-            <a href="#library">E-LIBRARY</a>
-            <a href="#layanan">LAYANAN</a>
-        </div>
-        <a href="#daftar" class="register-btn">DAFTAR SEKARANG</a>
-    </nav>
->>>>>>> 801a9280216ad96a73a02d48d63dae0c03be4c6e
 
     <section class="hero">
         <h1>Bimbel Online Terbaik,<br>Terlengkap, dan Terbukti di Seluruh Dunia</h1>

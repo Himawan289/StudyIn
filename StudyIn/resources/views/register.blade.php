@@ -4,134 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyIn - Register</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Adding logo as a favicon in the head -->
     <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/png">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f0fe;
-            margin: 0;
-            padding: 0;
-        }
-        /* Logo styles (positioned on the top-left of the page) */
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        .logo {
-            width: 150px; /* Adjust the size of the logo */
-        }
-        .register-container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border: 2px solid #ffcc66; /* Border for register form */
-        }
-        .btn-signup {
-            background-color: #ffcc66;
-            border: none;
-            width: 100%;
-        }
-        .btn-signup:hover {
-            background-color: #e6b85c;
-        }
-        footer {
-            background-color: #fff;
-            padding: 20px;
-            border-top: 2px solid #ffcc66; /* Border for footer */
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-        .footer {
-            border-top: 2px solid #ffcc66;
-            padding: 20px;
-            text-align: center;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 40px; /* Adds spacing between columns */
-        }
-        .footer-left, .footer-right {
-            flex: 1; /* Ensures both sections take equal width */
-        }
-        .footer-links {
-            flex: 2; /* Makes the center links section larger */
-            display: flex;
-            flex-direction: column;
-        }
-        .footer-left h2, .footer-right h3 {
-            margin-bottom: 10px; /* Space below titles */
-        }
-        .footer-right p {
-            margin-top: 10px; /* Adds spacing between social media icons and copyright */
-        }
-        .footer-right .social-media {
-            display: flex;
-            justify-content: center;
-        }
-        .footer-links h3, .footer-left h2 {
-            margin-bottom: 10px; /* Adds space below headers */
-        }
-        .footer-links p {
-            margin: 5px 0; /* Adds spacing between items */
-        }
-        .social-logo {
-            width: 25px;
-            margin: 0 10px;
-        }
-        /* Flexbox for social media icons and copyright text */
-        .footer-right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .social-media {
-            display: flex;
-            justify-content: center;
-        }
-        .copyright {
-            margin-top: 10px; /* Spacing between icons and copyright */
-        }
-        /* Flexbox container for header text and image */
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .header-text {
-            text-align: center;
-            margin-right: 20px; /* Space between text and image */
-        }
-        .header-image {
-            width: 200px; /* Adjust the size of the image */
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 </head>
 <body>
-    <!-- Logo at the top-left (body section) -->
     <div class="logo-container">
-        <img src="{{ asset('img/logo.png') }}" alt="Study In Logo" class="logo">
+        <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
     </div>
 
     <div class="register-container">
-        <!-- Header container for the text and image -->
         <div class="header-container">
             <div class="header-text">
                 <h2>StudyIn</h2>
                 <p>Learn Today, Lead Tomorrow</p>
             </div>
-            <img src="{{ asset('img/belajar1.png') }}" alt="Learning Image" class="header-image">
+            <img src="{{ asset('img/belajar 1.png') }}" alt="Learning Image" class="header-image">
         </div>
-        <form>
+
+        <!-- Registration Form -->
+        <form id="signup-form">
             <div class="row g-3">
                 <!-- First Name -->
                 <div class="col-md-6">
@@ -154,7 +47,7 @@
                 <!-- Age -->
                 <div class="col-md-6">
                     <label for="age" class="form-label">Age</label>
-                    <input type="number" id="age" class="form-control" required>
+                    <input type="text" id="age" class="form-control" required readonly>
                 </div>
                 
                 <!-- Grade -->
@@ -195,25 +88,40 @@
             </div>
             <button type="submit" class="btn btn-signup mt-3">Sign up</button>
         </form>
-        <hr>
-        <p class="text-center">Or Sign Up with</p>
-        <div class="d-flex justify-content-center">
-            <button class="btn btn-light me-2"><i class="fab fa-google"></i> Google</button>
-            <button class="btn btn-light me-2"><i class="fab fa-facebook"></i> Facebook</button>
-            <button class="btn btn-light"><i class="fab fa-apple"></i> Apple</button>
+        
+        <p class="or-signup-with">Or Sign Up with</p>
+        <div class="social-container">
+            <!-- Box Google -->
+            <div class="social-box">
+                <img src="{{ asset('img/google.png') }}" alt="Google Logo" class="social-logo">
+                <span class="social-text">Google</span>
+            </div>
+
+            <!-- Box Facebook -->
+            <div class="social-box">
+                <img src="{{ asset('img/facebook.png') }}" alt="Facebook Logo" class="social-logo">
+                <span class="social-text">Facebook</span>
+            </div>
+
+            <!-- Box Apple -->
+            <div class="social-box">
+                <img src="{{ asset('img/apple.png') }}" alt="Apple Logo" class="social-logo">
+                <span class="social-text">Apple</span>
+            </div>
         </div>
-        <p class="text-center mt-3">Already have an account? <a>Login</a></p>
+
+        <!-- Login Link -->
+        <div class="account-login">
+            Already have an account? <a href="/login" class="login-link">Login</a>
+        </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <!-- Left Column (Kategori) -->
                 <div class="footer-left">
                     <h2>Learn Today, <br> Lead Tomorrow</h2>
                 </div>
-
-                <!-- Center Column (Links) -->
                 <div class="footer-links">
                     <div>
                         <h3>Kategori</h3>
@@ -229,22 +137,56 @@
                         <p>Diskusi</p>
                     </div>
                 </div>
-
-                <!-- Right Column (Logo and Social Media) -->
                 <div class="footer-right">
-                    <img src="{{ asset('img/logo.png') }}" alt="Study In Logo" class="footer-logo">
+                    <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="footer-logo">
                     <div class="social-media">
                         <a href="#"><img src="{{ asset('img/Youtube.png') }}" alt="Youtube Logo" class="social-logo"></a>
                         <a href="#"><img src="{{ asset('img/Tik tok.png') }}" alt="Tiktok Logo" class="social-logo"></a>
+                        <a href="#"><img src="{{ asset('img/Instagram Logo.png') }}" alt="Instagram Logo" class="social-logo"></a>
                     </div>
-                    <p class="copyright">© 2024 All Rights Reserved</p>
                 </div>
             </div>
+            <p>© 2024 All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Optional: Bootstrap JS and icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dobInput = document.getElementById('dob');
+            const ageInput = document.getElementById('age');
+            const form = document.getElementById('signup-form');
+
+            dobInput.addEventListener('change', function() {
+                const dobValue = dobInput.value;
+                if (dobValue) {
+                    const birthDate = new Date(dobValue);
+                    const today = new Date();
+                    let age = today.getFullYear() - birthDate.getFullYear();
+                    const m = today.getMonth() - birthDate.getMonth();
+
+                    // Jika belum ulang tahun tahun ini
+                    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                    }
+
+                    // Menampilkan umur di input umur
+                    ageInput.value = age;
+                }
+            });
+
+            // Form submission event to redirect to dashboard
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();  // Mencegah form untuk disubmit secara default
+
+                // Tambahkan validasi atau pengiriman data jika diperlukan
+
+                // Jika berhasil, arahkan ke dashboard
+                window.location.href = '/dashboard';  // Ubah URL sesuai dengan rute dashboard Anda
+            });
+        });
+    </script>
 </body>
 </html>

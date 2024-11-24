@@ -33,11 +33,10 @@ Route::get('/detailCourse', function () {
     return view('detailCourse');
 });
 
-<<<<<<< HEAD
 Route::get('/register', function () {
     return view('register');
 });
-=======
+
 Route::get('/coursesLock', function () {
     return view('coursesLock');
 });
@@ -50,5 +49,7 @@ Route::get('/payment', function () {
     return view('payment');
 });
 
+Route::get('/login', function (){
+    return view('login');
+});
 
->>>>>>> 801a9280216ad96a73a02d48d63dae0c03be4c6e
