@@ -38,11 +38,13 @@
 }
 
 .course-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: flex-start;
     overflow-x: auto;
     padding: 10px 0;
+    margin-bottom: 100px;
 }
 
 .course-card {
@@ -53,7 +55,6 @@
     overflow: hidden;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .course-thumbnail {

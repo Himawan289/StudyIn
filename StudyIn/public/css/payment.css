@@ -1,0 +1,155 @@
+/* Reset */
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #FAFAFA;
+    color: #080808;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Dropdown Button */
+button {
+    font-family: 'Poppins';
+}
+
+.dropdown-button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #FDC65A; 
+    border: none; 
+    border-radius: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.dropdown-button:hover {
+    background-color: #FFE3B3;
+}
+
+.dropdown-button span {
+    font-size: 16px;
+}
+
+/* Discount Section */
+.discount-section {
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    background-color: #FDC65A; 
+    padding: 10px; 
+    border-radius: 15px;
+}
+
+.discount-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.discount-section input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #FFE3B3;
+}
+
+/* Payment Details */
+.payment-details {
+    background-color: #FDC65A; 
+    padding: 15px; 
+    border-radius: 15px;
+}
+
+.payment-details p {
+    display: flex;
+    justify-content: space-between; /* Membuat teks di kiri dan kanan */
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.payment-details b {
+    text-align: right; /* Memastikan <b> di rata kanan */
+}
+
+/* Button */
+.btn-submit {
+    width: 20%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #FDC65A;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #FFE3B3;
+}

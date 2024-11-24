@@ -1,0 +1,119 @@
+/* Styling umum untuk paket card */
+.paket-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.paket-card:hover {
+    transform: translateY(-10px); /* Efek hover untuk card */
+}
+
+/* Styling untuk thumbnail gambar */
+.paket-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+/* Styling untuk informasi paket */
+.paket-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Styling untuk judul paket */
+.paket-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #080808;
+}
+
+/* Styling untuk deskripsi paket */
+.paket-description {
+    font-size: 1rem;
+    color: #55565A;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Styling untuk meta informasi seperti durasi */
+.paket-meta {
+    margin-bottom: 1rem;
+}
+
+.paket-duration {
+    font-size: 0.875rem;
+    color: #323232;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Styling untuk harga */
+.paket-price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #30A0E0;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling untuk tombol beli sekarang */
+.paket-button {
+    background-color: #FFC973;
+    color: #000000;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.paket-button:hover {
+    background-color: #FFE3B3;
+}
+
+.paket-button i {
+    font-size: 1.2rem;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    .paket-card {
+        margin-bottom: 2rem;
+    }
+
+    .paket-info {
+        padding: 1rem;
+    }
+
+    .paket-title {
+        font-size: 1.1rem;
+    }
+
+    .paket-description {
+        font-size: 0.95rem;
+    }
+
+    .paket-price {
+        font-size: 1.125rem;
+    }
+
+    .paket-button {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}

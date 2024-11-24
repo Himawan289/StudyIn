@@ -18,6 +18,25 @@
             'lessonCount' => 8,
             'courseClass' => '3 SMA',
         ],
+
+        [
+            'thumbnail' => 'img/image.png',
+            'courseTitle' => 'Learn Figma - UI/UX Design Essential Training ',
+            'lessonCount' => 6,
+            'courseClass' => '1 SMA',
+        ],
+        [
+            'thumbnail' => 'img/image.png',
+            'courseTitle' => 'Master Photoshop for Beginners',
+            'lessonCount' => 10,
+            'courseClass' => '2 SMA',
+        ],
+        [
+            'thumbnail' => 'img/image.png',
+            'courseTitle' => 'Illustrator Essentials: From Zero to Hero',
+            'lessonCount' => 8,
+            'courseClass' => '3 SMA',
+        ],
     ];
 @endphp
 
@@ -39,39 +58,54 @@
 
 <body>
     @include('components.navbar')
-
-    <!-- Konten Dashboard -->
-    <div class="dashboard-content">
-        <h1>Welcome, Dimas!</h1>
-        <p>Have a good day!</p>
-
-        <h2>Rekomendasi Materi Hari Ini</h2>
-
-        <div class="slider">
-            <div><img src="{{ asset('img/slider.png') }}" alt="Materi 1"></div>
-            <div><img src="{{ asset('img/slider.png') }}" alt="Materi 2"></div>
-            <div><img src="{{ asset('img/slider.png') }}" alt="Materi 3"></div>
-        </div>
-
-        <h2 class="histori-header">
-            Histori Belajar
-            <a href="#" class="see-all">See All</a>
-        </h2>
-        
-        <div class="course-list" >
-            <!-- Repeat the course card component three times -->
+    <main style="min-height: 100vh; padding: 6rem 0;">
+        <h1 class="title" style="text-align: center;margin-bottom: 1rem;"> MATERI</h1>
+        <div
+            style="width: 83.333333%; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
             @foreach ($courses as $course)
-                @include('components.course-card', [
+                @include('components.course-cardLock', [
                     'thumbnail' => $course['thumbnail'],
                     'courseTitle' => $course['courseTitle'],
                     'lessonCount' => $course['lessonCount'],
                     'courseClass' => $course['courseClass'],
                 ])
             @endforeach
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; padding: 2rem;">
+            <!-- Tombol Sebelumnya -->
+            <button
+                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                &lt;
+            </button>
 
+            <!-- Tombol Halaman 1 -->
+            <button
+                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                1
+            </button>
+
+            <!-- Tombol Halaman 2 -->
+            <button
+                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                2
+            </button>
+
+            <!-- Tombol Halaman 3 -->
+            <button
+                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                3
+            </button>
+
+            <!-- Tombol Berikutnya -->
+            <button
+                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                &gt;
+            </button>
         </div>
 
-    </div>
+
+    </main>
+
 
     <footer class="footer">
         <div class="container">

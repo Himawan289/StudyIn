@@ -21,12 +21,12 @@
             @csrf
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Sign in</button>
+            <a href="{{ route('dashboard') }}" class="Sign In Button">Sign In</a>
             <div class="separator">Or sign in with</div>
             <div class="social-login">
-                <a href="{{ route('social.login', 'google') }}" class="social-btn google">Google</a>
-                <a href="{{ route('social.login', 'facebook') }}" class="social-btn facebook">Facebook</a>
-                <a href="{{ route('social.login', 'apple') }}" class="social-btn apple">Apple</a>
+                <a href="{{ route('login', 'google') }}" class="social-btn google">Google</a>
+                <a href="{{ route('login', 'facebook') }}" class="social-btn facebook">Facebook</a>
+                <a href="{{ route('login', 'apple') }}" class="social-btn apple">Apple</a>
             </div>
         </form>
     </div>

@@ -25,11 +25,30 @@ Route::get('/navbar', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+Route::get('/courses', function () {
+    return view('courses');
+});
 
 Route::get('/detailCourse', function () {
     return view('detailCourse');
 });
 
+<<<<<<< HEAD
 Route::get('/register', function () {
     return view('register');
 });
+=======
+Route::get('/coursesLock', function () {
+    return view('coursesLock');
+});
+
+Route::get('/paket', function () {
+    return view('paket');
+});
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+
+
+>>>>>>> 801a9280216ad96a73a02d48d63dae0c03be4c6e
