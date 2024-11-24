@@ -57,4 +57,6 @@ Route::get('/invoice', function (){
     return view('invoice');
 });
 
-
+Route::get('/jadwalbelajar', function (){
+    return view('jadwalbelajar');
+});
