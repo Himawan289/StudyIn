@@ -53,3 +53,8 @@ Route::get('/login', function (){
     return view('login');
 });
 
+Route::get('/invoice', function (){
+    return view('invoice');
+});
+
+

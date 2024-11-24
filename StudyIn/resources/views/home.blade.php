@@ -127,9 +127,9 @@
                 <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
                 <h2>Learn Today<br>Lead Tomorrow</h2>
                 <div class="social-links">
-                    <a href="#"><img src="/youtube.svg" alt="YouTube"></a>
-                    <a href="#"><img src="/tiktok.svg" alt="TikTok"></a>
-                    <a href="#"><img src="/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="{{ asset('img/Youtube.png') }}" alt="YouTube"></a>
+                    <a href="#"><img src="{{ asset('img/Tik tok.png') }}" alt="TikTok"></a>
+                    <a href="#"><img src="{{ asset('img/Instagram Logo.png') }}" alt="Instagram"></a>
                 </div>
             </div>
 
