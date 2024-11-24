@@ -60,3 +60,7 @@ Route::get('/invoice', function (){
 Route::get('/jadwalbelajar', function (){
     return view('jadwalbelajar');
 });
+
+Route::get('/jadwalkosong', function (){
+    return view('jadwalkosong');
+});
