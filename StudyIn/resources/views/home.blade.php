@@ -18,7 +18,7 @@
             <a href="#">E-Library</a>
             <a href="#">Layanan</a>
         </nav>
-        <a href="#" class="btn-signup">Daftar Sekarang</a>
+        <a href="{{ route('register') }}" class="btn-signup">Daftar Sekarang</a>
     </div>
 </header>
 

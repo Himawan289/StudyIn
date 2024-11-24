@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,8 @@ Route::get('/dashboard', function () {
 
 Route::get('/detailCourse', function () {
     return view('detailCourse');
+});
+
+Route::get('/register', function () {
+    return view('register');
 });
