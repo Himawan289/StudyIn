@@ -12,9 +12,11 @@
                 <span class="course-class">🏆 Kelas: {{ $courseClass }}</span>
             </div>
             <div class="button-container" style="display: flex; align-items: center;">
-                <button class="start-course-btn" style="display: flex; align-items: center;">
-                    Start Course <i class="fa-solid fa-angle-right" style="margin-left: 5px;"></i>
-                </button>
+                <a href="/payment" style="text-decoration: none">
+                    <button class="start-course-btn" style="display: flex; align-items: center;">
+                        Start Course <i class="fa-solid fa-angle-right" style="margin-left: 5px;"></i>
+                    </button>
+                </a>
                 <img src="{{ asset('img\Icon Lock.png') }}" alt="Lock Icon" class="lock-icon" style="margin-left: auto; height: 38px; width: auto;">
             </div>
         </div>

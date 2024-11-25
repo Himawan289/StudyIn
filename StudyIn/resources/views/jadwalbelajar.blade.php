@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ asset('css/jadwalbelajar.css') }}">
 </head>
 <body>
-<nav class="navbar">
+    @include('components.navbar')
+    {{-- <nav class="navbar">
         <div class="logo">
             <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
         </div>
@@ -20,7 +21,7 @@
             <input type="text" placeholder="Belajar apa hari ini?" class="search-bar">
             <img src="{{ asset('img/dimas.png') }}" alt="User Avatar">
         </div>
-    </nav>
+    </nav> --}}
 
     <main class="container">
         <section class="schedule-section">

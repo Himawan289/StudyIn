@@ -108,7 +108,7 @@
             <div class="footer-section">
                 <h3>KATEGORI</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Materi</a></li>
+                    <li><a href="/coursesLock">Materi</a></li>
                     <li><a href="#">Promo</a></li>
                     <li><a href="#">E-Library</a></li>
                 </ul>

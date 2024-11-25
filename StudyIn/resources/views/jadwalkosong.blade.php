@@ -12,9 +12,9 @@
             <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
         </div>
         <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#">MATERI</a>
-            <a href="#">JADWAL</a>
+            <a href="/">HOME</a>
+            <a href="/coursesLock">MATERI</a>
+            <a href="/jadwalKosong">JADWAL</a>
         </div>
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Belajar apa hari ini?">
@@ -30,6 +30,6 @@
             </div>
         </div>
         <p class="message">Upss, Jadwal belajar kamu tidak ditemukan nih.</p>
-        <p class="message">Ayo buat dan <a href="#" class="link">tambah jadwal belajarmu!</a></p>
+        <p class="message">Ayo buat dan <a href="/jadwalBelajar" class="link">tambah jadwal belajarmu!</a></p>
     </main>
 </body>

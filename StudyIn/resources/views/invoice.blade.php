@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ asset('css/invoice.css') }}">
 </head>
 <body>
-<nav class="navbar">
+    @include('composer.navbar')
+    {{-- <nav class="navbar">
         <div class="logo">
             <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
         </div>
@@ -20,7 +21,7 @@
             <input type="text" placeholder="Belajar apa hari ini?">
             <img src="{{ asset('img/dimas.png') }}" alt="User Avatar" class="user-avatar">
         </div>
-    </nav>
+    </nav> --}}
 
     <div class="container">
         <h1>INVOICE</h1>
@@ -101,7 +102,7 @@
             <div>
                 <h2>KATEGORI</h2>
                 <ul>
-                    <li><a href="#">Materi</a></li>
+                    <li><a href="/coursesLock">Materi</a></li>
                     <li><a href="#">Promo</a></li>
                     <li><a href="#">E-Library</a></li>
                 </ul>
@@ -109,7 +110,7 @@
             <div>
                 <h2>QUICK ACCESS</h2>
                 <ul>
-                    <li><a href="#">Jadwal</a></li>
+                    <li><a href="/jadwalKosong">Jadwal</a></li>
                     <li><a href="#">Video Pembelajaran</a></li>
                     <li><a href="#">Latihan Soal</a></li>
                     <li><a href="#">Diskusi</a></li>

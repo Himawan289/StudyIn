@@ -1,14 +1,16 @@
 <div class="navbar">
     <!-- Logo -->
     <div class="navbar-logo">
-        <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo-icon">
+        <a href="/">
+            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo-icon">
+        </a>
     </div>
 
     <!-- Menu Navigasi -->
     <ul class="navbar-menu">
         <li><a href="{{ url('/') }}">Home</a></li>
-        <li><a href="{{ url('/materi') }}">Materi</a></li>
-        <li><a href="{{ url('/jadwal') }}">Jadwal</a></li>
+        <li><a href="{{ url('/coursesLock') }}">Materi</a></li>
+        <li><a href="{{ url('/jadwalKosong') }}">Jadwal</a></li>
     </ul>
 
     <!-- Search Bar -->

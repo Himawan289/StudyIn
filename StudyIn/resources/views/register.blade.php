@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="logo-container">
-        <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
+        <a href="/">
+            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
+        </a>
     </div>
 
     <div class="register-container">

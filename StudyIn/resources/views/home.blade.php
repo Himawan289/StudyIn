@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyIn</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
+
 <body>
 
-<header class="header">
-    <div class="container">
-        <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
-        <nav class="nav">
-            <a href="#">Produk</a>
-            <a href="#">Promo</a>
-            <a href="#">Testimoni</a>
-            <a href="#">E-Library</a>
-            <a href="#">Layanan</a>
-        </nav>
-        <a href="#" class="btn-signup">Daftar Sekarang</a>
-    </div>
-</header>
+    <header class="header">
+        <div class="container">
+            <a href="/">
+                <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="logo">
+            </a>
+            <nav class="nav">
+                <a href="/coursesLock">Produk</a>
+                <a href="#">Promo</a>
+                <a href="#">Testimoni</a>
+                <a href="#">E-Library</a>
+                <a href="#">Layanan</a>
+            </nav>
+            <a href="/register" class="btn-signup">Daftar Sekarang</a>
+        </div>
+    </header>
 
     <section class="hero">
         <h1>Bimbel Online Terbaik,<br>Terlengkap, dan Terbukti di Seluruh Dunia</h1>
         <div class="phone-input">
-            <input type="text" placeholder="+62" /> 
+            <input type="text" placeholder="+62" />
             <button>Dapatkan Diskon</button>
         </div>
     </section>
@@ -57,10 +61,11 @@
         <div class="mentors-content">
             <div class="mentors-left">
                 <img src="{{ asset('img/best Mentors.png') }}" alt="Best Mentors" />
-                <p class="mentors-text">Di StudyIn, Kami Berkomitmen Menghadirkan Para Profesor Terbaik untuk Memberikan Kursus-Kursus Berkualitas Unggul.</p>
+                <p class="mentors-text">Di StudyIn, Kami Berkomitmen Menghadirkan Para Profesor Terbaik untuk Memberikan
+                    Kursus-Kursus Berkualitas Unggul.</p>
                 <a href="#" class="see-all-btn">Semua Mentor</a>
             </div>
-            
+
             <div class="mentors-grid">
                 <div class="mentor-card">
                     <img src="{{ asset('img/nadia.png') }}" alt="Nadia" />
@@ -136,7 +141,7 @@
             <div class="footer-section">
                 <h3>KATEGORI</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Materi</a></li>
+                    <li><a href="/coursesLock">Materi</a></li>
                     <li><a href="#">Promo</a></li>
                     <li><a href="#">E-Library</a></li>
                 </ul>
@@ -161,4 +166,5 @@
     </footer>
 
 </body>
+
 </html>

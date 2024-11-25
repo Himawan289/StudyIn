@@ -57,10 +57,10 @@ Route::get('/invoice', function (){
     return view('invoice');
 });
 
-Route::get('/jadwalbelajar', function (){
+Route::get('/jadwalBelajar', function (){
     return view('jadwalbelajar');
 });
 
-Route::get('/jadwalkosong', function (){
+Route::get('/jadwalKosong', function (){
     return view('jadwalkosong');
 });

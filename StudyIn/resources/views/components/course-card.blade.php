@@ -10,7 +10,9 @@
                 <span class="course-lesson">📚 Lesson: {{ $lessonCount }}</span>
                 <span class="course-class">🏆 Kelas: {{ $courseClass }}</span>
             </div>
-            <button class="start-course-btn">Start Course <i class="fa-solid fa-angle-right"></i></button>
+            <a href="/detailCourse">             
+                <button class="start-course-btn">Start Course <i class="fa-solid fa-angle-right"></i></button>
+            </a>
         </div>
 
     </div>
