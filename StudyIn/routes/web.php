@@ -64,3 +64,7 @@ Route::get('/jadwalBelajar', function (){
 Route::get('/jadwalKosong', function (){
     return view('jadwalkosong');
 });
+
+Route::get('/daftarjadwal', function (){
+    return view('daftarjadwal');
+});
