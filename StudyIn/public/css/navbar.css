@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4cb1f7;
+    background-color: #3498db;
     padding: 10px 20px;
     width: 100%;
     position: fixed;
@@ -57,7 +57,7 @@
 .navbar-search input {
     border: none;
     background: transparent;
-    color: #4cb1f7;
+    color: #3498db;
     outline: none;
     font-size: 14px;
     width: 150px;
@@ -66,7 +66,7 @@
 .navbar-search button {
     border: none;
     background: transparent;
-    color: #4cb1f7;
+    color: #3498db;
     cursor: pointer;
     font-size: 16px;
 }

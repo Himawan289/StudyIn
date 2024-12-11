@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #33a0ff;
+    background-color: #3498db ;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -154,7 +154,7 @@ body {
 }
 
 .link {
-    color: #33a0ff;
+    color: #3498db ;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;

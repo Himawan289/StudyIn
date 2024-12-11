@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #33a9e0;
+    background-color: #3498db;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .footer {
-    background-color: #33a9e0;
+    background-color: #3498db;
     color: white;
     padding: 2rem;
     margin-top: 2rem;
