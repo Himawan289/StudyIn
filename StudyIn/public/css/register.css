@@ -130,7 +130,8 @@ form .col-md-6 {
 
 .account-login {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 1rem;
     color: #333; /* Warna teks */
 }
@@ -143,80 +144,4 @@ form .col-md-6 {
 
 .login-link:hover {
     text-decoration: underline; /* Tampilkan garis bawah saat hover */
-}
-
-footer {
-    background-color: #3498db;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.footer-left,
-.footer-right {
-    flex: 1;
-}
-
-.footer-links {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-left h2,
-.footer-links h3 {
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.footer-links p {
-    margin: 5px 0;
-    color: #fff;
-}
-
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.footer-right .social-media {
-    margin-bottom: 10px;
-}
-
-.footer-right .copyright {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #fff;
-}
-
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
 }

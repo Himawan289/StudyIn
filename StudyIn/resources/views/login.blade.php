@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 <body>
     <div class="logo-container">
@@ -68,39 +69,7 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h2>Learn Today, <br> Lead Tomorrow</h2>
-                </div>
-                <div class="footer-links">
-                    <div>
-                        <h3>Kategori</h3>
-                        <p>Materi</p>
-                        <p>Promo</p>
-                        <p>E-Library</p>
-                    </div>
-                    <div>
-                        <h3>Quick Access</h3>
-                        <p>Jadwal</p>
-                        <p>Video Pembelajaran</p>
-                        <p>Latihan Soal</p>
-                        <p>Diskusi</p>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="footer-logo">
-                    <div class="social-media">
-                        <a href="#"><img src="{{ asset('img/Youtube.png') }}" alt="Youtube Logo" class="social-logo"></a>
-                        <a href="#"><img src="{{ asset('img/Tik tok.png') }}" alt="Tiktok Logo" class="social-logo"></a>
-                        <a href="#"><img src="{{ asset('img/Instagram Logo.png') }}" alt="Instagram Logo" class="social-logo"></a>
-                    </div>
-                </div>
-            </div>
-            <p>© 2024 All Rights Reserved.</p>
-        </div>
-    </footer>
+    @include('components.footer')
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -5,23 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>invoice</title>
     <link rel="stylesheet" href="{{ asset('css/daftarjadwal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 </head>
 <body>
     @include('components.navbar')
-    {{-- <nav class="navbar">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
-        </div>
-        <div class="nav-links">
-            <div>HOME</div>
-            <div>MATERI</div>
-            <div>JADWAL</div>
-        </div>
-        <div class="search-container">
-            <input type="text" placeholder="Belajar apa hari ini?" class="search-bar">
-            <img src="{{ asset('img/dimas.png') }}" alt="User Avatar">
-        </div>
-    </nav> --}}
     <div class="container">
         <div class="date-select">
             <select>
@@ -55,8 +43,6 @@
         <button class="save-button">Simpan</button>
     </div>
 
-    <footer>
-        &copy; 2024 StudyIn. All rights reserved.
-    </footer>
+    @include('components.footer')
 </body>
 </html>

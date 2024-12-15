@@ -5,23 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>invoice</title>
     <link rel="stylesheet" href="{{ asset('css/jadwalbelajar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 <body>
     @include('components.navbar')
-    {{-- <nav class="navbar">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
-        </div>
-        <div class="nav-links">
-            <div>HOME</div>
-            <div>MATERI</div>
-            <div>JADWAL</div>
-        </div>
-        <div class="search-container">
-            <input type="text" placeholder="Belajar apa hari ini?" class="search-bar">
-            <img src="{{ asset('img/dimas.png') }}" alt="User Avatar">
-        </div>
-    </nav> --}}
 
     <main class="container">
         <section class="schedule-section">
@@ -134,28 +121,5 @@
         </aside>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h2>Learn Today<br>Lead Tomorrow</h2>
-            </div>
-            <div class="footer-section">
-                <h2>KATEGORI</h2>
-                <ul class="footer-links">
-                    <li>Materi</li>
-                    <li>Promo</li>
-                    <li>E-Library</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h2>QUICK ACCESS</h2>
-                <ul class="footer-links">
-                    <li>Jadwal</li>
-                    <li>Video Pembelajaran</li>
-                    <li>Latihan Soal</li>
-                    <li>Diskusi</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    @include('components.footer')
 </body>

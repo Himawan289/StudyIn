@@ -21,7 +21,7 @@
 
     <!-- Profil Pengguna -->
     <div class="navbar-profile">
-        <img src="{{ asset('img/dimas.png') }}" alt="Profil" class="profile-icon">
+        <img src="{{ asset('img/cello.png') }}" alt="Profil" class="profile-icon">
     </div>
 </div>
 

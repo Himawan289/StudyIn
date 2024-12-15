@@ -5,23 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>invoice</title>
     <link rel="stylesheet" href="{{ asset('css/invoice.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 <body>
-    @include('composer.navbar')
-    {{-- <nav class="navbar">
-        <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo">
-        </div>
-        <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#">MATERI</a>
-            <a href="#">JADWAL</a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Belajar apa hari ini?">
-            <img src="{{ asset('img/dimas.png') }}" alt="User Avatar" class="user-avatar">
-        </div>
-    </nav> --}}
+    @include('components.navbar')
 
     <div class="container">
         <h1>INVOICE</h1>
@@ -94,34 +81,6 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div>
-                <h2>Learn Today<br>Lead Tomorrow</h2>
-            </div>
-            <div>
-                <h2>KATEGORI</h2>
-                <ul>
-                    <li><a href="/coursesLock">Materi</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">E-Library</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2>QUICK ACCESS</h2>
-                <ul>
-                    <li><a href="/jadwalKosong">Jadwal</a></li>
-                    <li><a href="#">Video Pembelajaran</a></li>
-                    <li><a href="#">Latihan Soal</a></li>
-                    <li><a href="#">Diskusi</a></li>
-                </ul>
-                <div class="social-icons">
-                    <img src="{{ asset('img/Youtube.png') }}" alt="YouTube">
-                    <img src="{{ asset('img/Tik tok.png') }}" alt="TikTok">
-                    <img src="{{ asset('img/Instagram Logo.png') }}" alt="Instagram">
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('components.footer')
 </body>
 </html>

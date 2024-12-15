@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -217,30 +217,4 @@ body {
 .recommendation-details {
     font-size: 0.9rem;
     color: #666;
-}
-
-footer {
-    background-color: #3498db;
-    color: white;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-section h2 {
-    margin-bottom: 1rem;
-}
-
-.footer-links {
-    list-style: none;
-}
-
-.footer-links li {
-    margin-bottom: 0.5rem;
 }

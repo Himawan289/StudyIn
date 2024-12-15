@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyIn</title>
     <link rel="stylesheet" href="{{ asset('css/detailCourse.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <style>
         .video-container {
             position: relative;
@@ -104,39 +105,7 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-left">
-                <h2>Learn Today, <br> Lead Tomorrow</h2>
-            </div>
-            <div class="footer-links">
-                <div>
-                    <h3>Kategori</h3>
-                    <p>Materi</p>
-                    <p>Promo</p>
-                    <p>E-Library</p>
-                </div>
-                <div>
-                    <h3>Quick Access</h3>
-                    <p>Jadwal</p>
-                    <p>Video Pembelajaran</p>
-                    <p>Latihan Soal</p>
-                    <p>Diskusi</p>
-                </div>
-            </div>
-            <div class="footer-right">
-                <img src="{{ asset('img/logo.png') }}" alt="StudyIn Logo" class="footer-logo">
-                <div class="social-media">
-                    <a href="#"><img src="{{ asset('img/Youtube.png') }}" alt="Youtube Logo" class="social-logo"></a>
-                    <a href="#"><img src="{{ asset('img/Tik tok.png') }}" alt="Tiktok Logo" class="social-logo"></a>
-                    <a href="#"><img src="{{ asset('img/Instagram Logo.png') }}" alt="Instagram Logo" class="social-logo"></a>
-                </div>
-            </div>
-        </div>
-        <p>© 2024 All Rights Reserved.</p>
-    </div>
-</footer>
+@include('components.footer')
 
 <script>
     const placeholder = document.getElementById('placeholder');
