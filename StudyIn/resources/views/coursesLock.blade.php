@@ -61,7 +61,7 @@
     <main style="min-height: 100vh; padding: 6rem 0;">
         <h1 class="title" style="text-align: center;margin-bottom: 1rem;"> MATERI</h1>
         <div
-            style="width: 83.333333%; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+            style="width: 83.333333%; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem;">
             @foreach ($courses as $course)
                 @include('components.course-cardLock', [
                     'thumbnail' => $course['thumbnail'],
@@ -74,31 +74,31 @@
         <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; padding: 2rem;">
             <!-- Tombol Sebelumnya -->
             <button
-                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                style="width: 20px; height: 20px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: .75rem; cursor: pointer;">
                 &lt;
             </button>
 
             <!-- Tombol Halaman 1 -->
             <button
-                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                style="width: 20px; height: 20px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: .75rem; cursor: pointer;">
                 1
             </button>
 
             <!-- Tombol Halaman 2 -->
             <button
-                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                style="width: 20px; height: 20px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: .75rem; cursor: pointer;">
                 2
             </button>
 
             <!-- Tombol Halaman 3 -->
             <button
-                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                style="width: 20px; height: 20px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: .75rem; cursor: pointer;">
                 3
             </button>
 
             <!-- Tombol Berikutnya -->
             <button
-                style="width: 50px; height: 50px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; cursor: pointer;">
+                style="width: 20px; height: 20px; background-color: #3498db; color: white; border: none; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: .75rem; cursor: pointer;">
                 &gt;
             </button>
         </div>
