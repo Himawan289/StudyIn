@@ -4,16 +4,7 @@ body {
     padding: 0;
     background: linear-gradient(to bottom, #3498db 20%, #e8f0fe 20% 80%, #3498db 20%);
     height: 100%;
-    
-}
-/* Tambahkan untuk memusatkan form di tengah */
-.body-container {
-    display: flex;
-    justify-content: center; /* Pusatkan horizontal */
-    align-items: center; /* Pusatkan vertikal */
-    min-height: 100vh; /* Pastikan tinggi penuh layar */
-    padding: 20px; /* Berikan sedikit padding */
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .logo-container {
@@ -60,7 +51,7 @@ body {
     max-width: 600px;
     max-height: 200px;
     width: 100%;
-    margin: 120px auto 20px auto; /* Tambahkan margin-top yang lebih besar */
+    margin: 120px auto 20px auto;
 }
 
 .header-text {
@@ -75,20 +66,37 @@ body {
     height: auto;
 }
 
-form .form-control {
-    padding: 10px 15px; 
-    border-radius: 20px; 
-    border: 1px solid #ccc;
-    font-size: 0.9rem; 
-    margin-bottom: 5px; 
-    width: 100%; 
-}
+form {
+            display: flex; /* Flexbox layout */
+            flex-wrap: wrap; /* Elemen akan turun jika tidak cukup ruang */
+            justify-content: center; /* Pusatkan form */
+            gap: 20px; /* Jarak horizontal dan vertical antar elemen */
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
 
+        form .form-control {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 1rem;
+            box-sizing: border-box; /* Padding tidak menambah lebar elemen */
+            width: 100%;
+        }
 
-form .col-md-6 {
-    padding-left: 120px; /* Kurangi padding kiri */
-    padding-right: 120px; /* Kurangi padding kanan */
-}
+        form .col-md-6 {
+            padding: 0 40px; /* Kurangi padding */
+            width: calc(50% - 10px); /* Lebar dinamis untuk 2 kolom */
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            form .col-md-6 {
+                width: 100%; /* Elemen menjadi full width pada layar kecil */
+            }
+        }
 
 /* Styling untuk teks "Or Sign Up With" */
 .or-signup-with {
