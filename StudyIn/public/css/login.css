@@ -55,30 +55,29 @@ body {
     height: auto;
 }
 
-/* Form styling */
-.form-label {
-    font-weight: 400;
-}
-
 .form-control {
-    padding: 10px;
-    border-radius: 50px;
+    padding: 10px 15px; 
+    border-radius: 20px; 
     border: 1px solid #ccc;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 0.9rem; 
+    margin-bottom: 15px; 
+    width: 100%; 
 }
 
 .btn-signin {
     background-color: #ffcc66;
     border: none;
-    width: 100%;
+    width: 100%; 
     color: #000;
-    padding: 10px;
+    padding: 10px 15px; 
     font-size: 1rem;
-    border-radius: 50px;
+    border-radius: 20px; 
     margin: 10px 0;
     text-align: center;
     display: block;
+    max-width: 350px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .btn-signin:hover {

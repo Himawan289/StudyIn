@@ -4,6 +4,16 @@ body {
     padding: 0;
     background: linear-gradient(to bottom, #3498db 20%, #e8f0fe 20% 80%, #3498db 20%);
     height: 100%;
+    
+}
+/* Tambahkan untuk memusatkan form di tengah */
+.body-container {
+    display: flex;
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    min-height: 100vh; /* Pastikan tinggi penuh layar */
+    padding: 20px; /* Berikan sedikit padding */
+    box-sizing: border-box;
 }
 
 .logo-container {
@@ -50,7 +60,7 @@ body {
     max-width: 600px;
     max-height: 200px;
     width: 100%;
-    margin: 70px auto 20px auto;
+    margin: 120px auto 20px auto; /* Tambahkan margin-top yang lebih besar */
 }
 
 .header-text {
@@ -66,16 +76,18 @@ body {
 }
 
 form .form-control {
+    padding: 10px 15px; 
+    border-radius: 20px; 
     border: 1px solid #ccc;
-    border-radius: 20px; /* Tambahkan border-radius untuk membuatnya melengkung */
-    padding: 10px;
-    font-size: 1rem;
+    font-size: 0.9rem; 
+    margin-bottom: 5px; 
+    width: 100%; 
 }
 
 
 form .col-md-6 {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 120px; /* Kurangi padding kiri */
+    padding-right: 120px; /* Kurangi padding kanan */
 }
 
 /* Styling untuk teks "Or Sign Up With" */
