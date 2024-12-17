@@ -61,7 +61,7 @@
                         <p>Diskon: <b>50.000</b></p>
                         <p>Total: <b>50.000</b></p>
                     </div>
-                    <a href="/courses">
+                    <a href="/invoice">
                         <button class="btn-submit">
                             Bayar
                         </button>

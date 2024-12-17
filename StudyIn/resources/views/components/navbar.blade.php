@@ -8,7 +8,7 @@
 
     <!-- Menu Navigasi -->
     <ul class="navbar-menu">
-        <li><a href="{{ url('/') }}">Home</a></li>
+        <li><a href="{{ url('/dashboard') }}">Home</a></li>
         <li><a href="{{ url('/coursesLock') }}">Materi</a></li>
         <li><a href="{{ url('/jadwalKosong') }}">Jadwal</a></li>
     </ul>
