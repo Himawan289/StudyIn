@@ -73,7 +73,7 @@
         <div class="course-info">
             <!-- Video Container -->
             <div class="video-container">
-                <img src="{{ asset('img/detailcourse.png') }}" alt="Course Image" class="course-image" id="placeholder">
+                <img src="{{ asset('img/detailcourse.jpeg') }}" alt="Course Image" class="course-image" id="placeholder">
             </div>
 
             <div class="course-description">

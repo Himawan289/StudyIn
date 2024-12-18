@@ -58,42 +58,42 @@
 
             <div class="mentors-grid">
                 <div class="mentor-card">
-                    <img src="{{ asset('img/nadia.png') }}" alt="Nadia" />
+                    <img src="{{ asset('img/nadia.jpeg') }}" alt="Nadia" />
                     <div class="mentor-info">
                         <h3>Nadia</h3>
                         <p>Matematika</p>
                     </div>
                 </div>
                 <div class="mentor-card">
-                    <img src="{{ asset('img/erwin.png') }}" alt="Erwin" />
+                    <img src="{{ asset('img/erwin.jpeg') }}" alt="Erwin" />
                     <div class="mentor-info">
                         <h3>Erwin</h3>
                         <p>Fisika</p>
                     </div>
                 </div>
                 <div class="mentor-card">
-                    <img src="{{ asset('img/hara.png') }}" alt="Hara" />
+                    <img src="{{ asset('img/hara.jpeg') }}" alt="Hara" />
                     <div class="mentor-info">
                         <h3>Hara</h3>
                         <p>Biologi</p>
                     </div>
                 </div>
                 <div class="mentor-card">
-                    <img src="{{ asset('img/dimas.png') }}" alt="Dimas" />
+                    <img src="{{ asset('img/dimas.jpeg') }}" alt="Dimas" />
                     <div class="mentor-info">
                         <h3>Dimas</h3>
                         <p>Kimia</p>
                     </div>
                 </div>
                 <div class="mentor-card">
-                    <img src="{{ asset('img/cello.png') }}" alt="Cello" />
+                    <img src="{{ asset('img/cello.jpeg') }}" alt="Cello" />
                     <div class="mentor-info">
                         <h3>Cello</h3>
                         <p>Bahasa Inggris</p>
                     </div>
                 </div>
                 <div class="mentor-card">
-                    <img src="{{ asset('img/haqqul.png') }}" alt="Haqqul" />
+                    <img src="{{ asset('img/haqqul.jpeg') }}" alt="Haqqul" />
                     <div class="mentor-info">
                         <h3>Haqqul</h3>
                         <p>Kalkulus</p>

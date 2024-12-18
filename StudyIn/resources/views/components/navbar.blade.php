@@ -8,7 +8,7 @@
 
     <!-- Menu Navigasi -->
     <ul class="navbar-menu">
-        <li><a href="{{ url('/dashboard') }}">Home</a></li>
+        <li><a href="{{ url('/dashboardg') }}">Home</a></li>
         <li><a href="{{ url('/coursesLock') }}">Materi</a></li>
         <li><a href="{{ url('/jadwalKosong') }}">Jadwal</a></li>
     </ul>
@@ -21,7 +21,7 @@
 
     <!-- Profil Pengguna -->
     <div class="navbar-profile">
-        <img src="{{ asset('img/cello.png') }}" alt="Profil" class="profile-icon">
+        <img src="{{ asset('img/dimas.jpeg') }}" alt="Profil" class="profile-icon">
     </div>
 </div>
 
